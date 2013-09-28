@@ -19,6 +19,7 @@ def secure_token
 		token = SecureRandom.hex(64)
 		File.write(token_file, token)
 		token
+	end
 end
 
-Caretopair::Application.config.secret_key_base = token_file
+Caretopair::Application.config.secret_key_base = secure_token
