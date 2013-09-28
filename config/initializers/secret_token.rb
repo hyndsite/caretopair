@@ -9,4 +9,16 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Caretopair::Application.config.secret_key_base = '8211ba2de176e75b49f7e13a901e2f4f44e9a47996cfef43e53ea99fa0a416db05c747e6afa4a3a700bb2c6c2b83890edac9bcc5b8a39e4728721ab83ecd6418'
+require 'securerandom'
+
+def secure_token
+	token_file = Rails.root.join('.secret')
+	if File.exists? (token_file)
+		File.read(token_file).chomp
+	else 
+		token = SecureRandom.hex(64)
+		File.write(token_file, token)
+		token
+end
+
+Caretopair::Application.config.secret_key_base = token_file
