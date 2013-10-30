@@ -5,8 +5,13 @@ describe "User Pages" do
 
   describe "signup page" do
 		before { visit signup_path }
-	
-		it "has a link to github"
+		
+		it "should have base title" do
+			should have_title("")
+		end
+
+		it { should have_title("sign up") }
+		it "have content sign up"
 		it "has a link to bitbucket"
 
   end

@@ -1,9 +1,16 @@
 Caretopair::Application.routes.draw do
-  get "users/new"
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   root 'static_pages#home'
-  match :signup,          to: 'users#new',            via: 'get'
-  match :about,           to: 'static_pages#about',   via: 'get'
+  match :signup,                    to: 'users#new',            via: 'get'
+  match :about,                     to: 'static_pages#about',   via: 'get'
+  match :signin,                    to: 'sessions#new',         via: 'get'
+  match :signout,                   to: 'sessions#destroy',     via: 'destroy'
+  match "/auth/github/callback",     to: 'sessions#create',      via: 'get'
+  #match '/auth/:provider/callback', to: 'sessions#create'
+  #match '/auth/failure',            to: 'sessions#'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

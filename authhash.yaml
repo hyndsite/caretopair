@@ -1,0 +1,56 @@
+--- !ruby/hash:OmniAuth::AuthHash
+provider: github
+uid: '1114080'
+info: !ruby/hash:OmniAuth::AuthHash::InfoHash
+  nickname: hyndsite
+  email: max.r.mccarty@gmail.com
+  name: ''
+  image: https://2.gravatar.com/avatar/dda836eb1479558ba7effd19c27664ff?d=https%3A%2F%2Fidenticons.github.com%2Febde915af302dc5d4a3d7d8241e080e8.png&r=x
+  urls: !ruby/hash:OmniAuth::AuthHash
+    GitHub: https://github.com/hyndsite
+    Blog: 
+credentials: !ruby/hash:OmniAuth::AuthHash
+  token: 93a6a3e2c903532b694e6e31523b9f92b6611e11
+  expires: false
+extra: !ruby/hash:OmniAuth::AuthHash
+  raw_info: !ruby/hash:OmniAuth::AuthHash
+    login: hyndsite
+    id: 1114080
+    avatar_url: https://2.gravatar.com/avatar/dda836eb1479558ba7effd19c27664ff?d=https%3A%2F%2Fidenticons.github.com%2Febde915af302dc5d4a3d7d8241e080e8.png&r=x
+    gravatar_id: dda836eb1479558ba7effd19c27664ff
+    url: https://api.github.com/users/hyndsite
+    html_url: https://github.com/hyndsite
+    followers_url: https://api.github.com/users/hyndsite/followers
+    following_url: https://api.github.com/users/hyndsite/following{/other_user}
+    gists_url: https://api.github.com/users/hyndsite/gists{/gist_id}
+    starred_url: https://api.github.com/users/hyndsite/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/hyndsite/subscriptions
+    organizations_url: https://api.github.com/users/hyndsite/orgs
+    repos_url: https://api.github.com/users/hyndsite/repos
+    events_url: https://api.github.com/users/hyndsite/events{/privacy}
+    received_events_url: https://api.github.com/users/hyndsite/received_events
+    type: User
+    site_admin: false
+    name: ''
+    company: 
+    blog: 
+    location: 
+    email: 
+    hireable: false
+    bio: 
+    public_repos: 7
+    followers: 0
+    following: 0
+    created_at: '2011-10-09T13:14:06Z'
+    updated_at: '2013-10-29T15:40:21Z'
+    public_gists: 0
+    total_private_repos: 0
+    owned_private_repos: 0
+    disk_usage: 6944
+    collaborators: 0
+    plan: !ruby/hash:OmniAuth::AuthHash
+      name: free
+      space: 307200
+      collaborators: 0
+      private_repos: 0
+    private_gists: 0
